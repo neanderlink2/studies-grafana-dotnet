@@ -1,0 +1,13 @@
+traces:
+  configs:
+  - name: default
+    remote_write:
+      - endpoint: tempo-prod-12-prod-sa-east-0.grafana.net:443
+        basic_auth:
+          username: 346817
+          password: eyJrIjoiMTFmNzM2ZmMxZTdkMDU2NmRmZjQ3YzQ3NjYzODJlNjZiMzMwNGY0YiIsIm4iOiJvdXRyYS1rZXkiLCJpZCI6NzY1MTMxfQ==
+
+    receivers:
+      otlp:
+        protocols:
+          grpc:
